@@ -1,17 +1,43 @@
 ##################################################
-# Syntax Coloring Map For Obstacle-Sensor-SOLDERED
+# Syntax Coloring Map 
 ##################################################
 
 ##################################################
-# Datatypes (KEYWORD1)
+# Datatypes 		(KEYWORD1)
 ##################################################
-
+PCAL6416A	KEYWORD1
 ##################################################
 # Methods and Functions (KEYWORD2)
 ##################################################
 
 begin	KEYWORD2
+pinModePCAL	KEYWORD2
+digitalWritePCAL	KEYWORD2
+pinPolarityPCAL	KEYWORD2
+digitalReadPCAL	KEYWORD2
+driveStrengthPCAL	KEYWORD2
+setInterruptPCAL	KEYWORD2
+getInterruptsPCAL	KEYWORD2
+inputLatchingPCAL	KEYWORD2
+openDrainPortPCAL	KEYWORD2
 
 ##################################################
 # Constants (LITERAL1)
 ##################################################
+
+PCAL6416A_A0	LITERAL1
+PCAL6416A_A1	LITERAL1
+PCAL6416A_A2	LITERAL1
+PCAL6416A_A3	LITERAL1
+PCAL6416A_A4	LITERAL1
+PCAL6416A_A5	LITERAL1
+PCAL6416A_A6	LITERAL1
+PCAL6416A_A7	LITERAL1
+PCAL6416A_B0	LITERAL1
+PCAL6416A_B1	LITERAL1
+PCAL6416A_B2	LITERAL1
+PCAL6416A_B3	LITERAL1
+PCAL6416A_B4	LITERAL1
+PCAL6416A_B5	LITERAL1
+PCAL6416A_B6	LITERAL1
+PCAL6416A_B7	LITERAL1
