@@ -6,7 +6,7 @@
  *
  *
  * @copyright GNU General Public License v3.0
- * @authors     Goran Juric @ soldered.com
+ * @authors     @ soldered.com
  ***************************************************/
 
 #ifndef __EASYC__
@@ -64,7 +64,7 @@ public:
     int err;
 
     char address;
-    const char defaultAddress = 0x30;
+    const char defaultAddress = 0x21;
 
     /**
      * @brief                Private function to send a single byte to sensor
