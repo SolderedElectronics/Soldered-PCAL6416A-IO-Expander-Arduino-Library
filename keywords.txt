@@ -13,8 +13,8 @@ PCAL6416A	KEYWORD1
 begin	KEYWORD2
 pinModePCAL	KEYWORD2
 digitalWritePCAL	KEYWORD2
-pinPolarityPCAL	KEYWORD2
-digitalReadPCAL	KEYWORD2
+pinPolarityPCAL	    KEYWORD2
+digitalReadPCAL	    KEYWORD2
 driveStrengthPCAL	KEYWORD2
 setInterruptPCAL	KEYWORD2
 getInterruptsPCAL	KEYWORD2
