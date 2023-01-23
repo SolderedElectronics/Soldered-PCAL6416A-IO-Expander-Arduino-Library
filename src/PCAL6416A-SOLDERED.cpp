@@ -155,7 +155,7 @@ void PCAL6416A::driveStrengthPCAL(uint8_t _pin, uint8_t _str)
     _pin %= 4;
     _str &= 3;
 
-    regs[PCAL6416A_OUTDRVST_REG00_ARRAY + _reg] &= (3 << _pin);
+    regs[PCAL6416A_OUTDRVST_REG00_ARRAY + _reg] &= ~(3 << _pin);
     regs[PCAL6416A_OUTDRVST_REG00_ARRAY + _reg] |= (_str << _pin);
 
     writeReg(PCAL6416A_OUTDRVST_REG00 + _reg, regs[PCAL6416A_OUTDRVST_REG00_ARRAY + _reg]);
