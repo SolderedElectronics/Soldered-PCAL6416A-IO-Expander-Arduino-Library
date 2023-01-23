@@ -31,7 +31,7 @@ void setup()
                           // I2C communication. This needs to be called
                           // only once before any other command
 
-    expander.pinModePCAL(PCAL6416A_A0, INPUT_PULLUP); // Set pin mode to input internally pulled HIGH.
+    expander.pinModePCAL(PCAL6416A_A0, OUTPUT); // Set pin mode to input internally pulled HIGH.
                                                       // Pins which are available are pins PCAL6416A_A0
                                                       // to PCAL6416A_A7 on port A and pins PCAL6416A_B0
                                                       // to PCAL6416A_B7 on port B. This function sets

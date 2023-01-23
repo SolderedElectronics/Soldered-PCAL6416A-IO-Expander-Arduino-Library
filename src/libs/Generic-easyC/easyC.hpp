@@ -64,7 +64,7 @@ class EasyC
     int err;
 
     char address;
-    const char defaultAddress = 0x21;
+    const char defaultAddress = 0x20;
 
     /**
      * @brief                Private function to send a single byte to sensor
