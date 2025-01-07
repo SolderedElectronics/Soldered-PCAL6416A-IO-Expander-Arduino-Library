@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['initializenative_0',['initializeNative',['../class_easy_c.html#a48c8aa55d48ef0cc11047cab0735c998',1,'EasyC::initializeNative()'],['../class_p_c_a_l6416_a.html#aab16cb55b8dc2633679a29bb0d9ad488',1,'PCAL6416A::initializeNative()']]],
-  ['inputlatchingpcal_1',['inputLatchingPCAL',['../class_p_c_a_l6416_a.html#a893eaffa815ea506be6b7e1b5ffb109e',1,'PCAL6416A']]]
+  ['getinterruptspcal_0',['getInterruptsPCAL',['../class_p_c_a_l6416_a.html#a60917f7e1628bbc546724a4adfc1978b',1,'PCAL6416A']]],
+  ['getregs_1',['getRegs',['../class_p_c_a_l6416_a.html#a5bfad39f614d146289372412bfe1e796',1,'PCAL6416A']]],
+  ['gpio_20expander_20breakout_20arduino_20library_2',['PCAL6416A GPIO expander breakout Arduino library',['../index.html',1,'']]]
 ];
