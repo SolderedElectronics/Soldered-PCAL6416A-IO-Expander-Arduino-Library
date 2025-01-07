@@ -44,7 +44,8 @@ void setup()
     expander.begin();     // Initialize PCAL6416A GPIO Expander, start
                           // I2C communication. This needs to be called
                           // only once before any other command
-
+    // If you're setting a custom I2C address, use expander.begin(0x32)
+    
     expander.pinModePCAL(PCAL6416A_A0, INPUT_PULLUP); // Set pin mode to input internally pulled HIGH.
                                                       // Pins which are available are pins PCAL6416A_A0
                                                       // to PCAL6416A_A7 on port A and pins PCAL6416A_B0
