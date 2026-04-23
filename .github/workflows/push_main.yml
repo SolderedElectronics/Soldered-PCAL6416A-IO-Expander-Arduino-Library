@@ -26,7 +26,6 @@ jobs:
 
       - run: cp -r ./dev/examples ./examples
       - run: cp -r ./dev/src ./src
-      - run: cp -r ./dev/barcodes ./barcodes
       - run: cp ./dev/LICENSE ./LICENSE
       - run: cp ./dev/README.md ./README.md
       - run: cp ./dev/keywords.txt ./keywords.txt
@@ -40,4 +39,4 @@ jobs:
           author_email: robot@example.com
           message: "Committing dev changes"
           branch: main
-          add: "examples src barcodes LICENSE README.md keywords.txt library.properties"
+          add: "examples src LICENSE README.md keywords.txt library.properties"
