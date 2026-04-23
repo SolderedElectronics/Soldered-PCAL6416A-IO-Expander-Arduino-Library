@@ -25,7 +25,7 @@
 var NAVTREE =
 [
   [ "PCAL6416A IO Expander Library", "index.html", [
-    [ "PCAL6416A GPIO expander breakout Arduino library", "index.html", null ],
+    [ "PCAL6416A GPIO expander breakout Arduino library", "index.html", "index" ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],
@@ -53,3 +53,4 @@ var NAVTREEINDEX =
 
 var SYNCONMSG = 'click to disable panel synchronization';
 var SYNCOFFMSG = 'click to enable panel synchronization';
+var LISTOFALLMEMBERS = 'List of all members';

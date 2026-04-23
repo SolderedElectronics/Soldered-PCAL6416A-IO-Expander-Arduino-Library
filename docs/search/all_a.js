@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['open_20source_20license_0',['Open-source license',['../index.html#autotoc_md6',1,'']]],
-  ['opendrainportpcal_1',['openDrainPortPCAL',['../class_p_c_a_l6416_a.html#aed2f999796dba075460751977e6ccd38',1,'PCAL6416A']]]
+  ['native_0',['native',['../class_easy_c.html#abb766b60f26778dbc64e8792fd754729',1,'EasyC']]]
 ];

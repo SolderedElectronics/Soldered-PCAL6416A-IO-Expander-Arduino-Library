@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['expander_20breakout_20arduino_20library_0',['PCAL6416A GPIO expander breakout Arduino library',['../index.html',1,'']]]
+  ['compatibility_0',['Board compatibility',['../index.html#autotoc_md4',1,'']]],
+  ['contents_1',['Repository Contents',['../index.html#autotoc_md1',1,'']]]
 ];
