@@ -44,36 +44,35 @@ void PCAL6416A::pinModePCAL(uint8_t _pin, uint8_t _mode)
     uint8_t _port = _pin / 8;
     _pin %= 8;
 
-    switch (_mode)
+    if (_mode == INPUT)
     {
-    case INPUT:
         regs[PCAL6416A_CFGPORT0_ARRAY + _port] |= (1 << _pin);
         writeReg(PCAL6416A_CFGPORT0 + _port, regs[PCAL6416A_CFGPORT0_ARRAY + _port]);
-        break;
-    case OUTPUT:
-        // There is a one cacth! Pins are by default (POR) set as HIGH. So first change it to LOW and then set is as
-        // output).
+    }
+    else if (_mode == OUTPUT)
+    {
         regs[PCAL6416A_CFGPORT0_ARRAY + _port] &= ~(1 << _pin);
         regs[PCAL6416A_OUTPORT0_ARRAY + _port] &= ~(1 << _pin);
         writeReg(PCAL6416A_OUTPORT0 + _port, regs[PCAL6416A_OUTPORT0_ARRAY + _port]);
         writeReg(PCAL6416A_CFGPORT0 + _port, regs[PCAL6416A_CFGPORT0_ARRAY + _port]);
-        break;
-    case INPUT_PULLUP:
+    }
+    else if (_mode == INPUT_PULLUP)
+    {
         regs[PCAL6416A_CFGPORT0_ARRAY + _port] |= (1 << _pin);
         regs[PCAL6416A_PUPDEN_REG0_ARRAY + _port] |= (1 << _pin);
         regs[PCAL6416A_PUPDSEL_REG0_ARRAY + _port] |= (1 << _pin);
         writeReg(PCAL6416A_CFGPORT0 + _port, regs[PCAL6416A_CFGPORT0_ARRAY + _port]);
         writeReg(PCAL6416A_PUPDEN_REG0 + _port, regs[PCAL6416A_PUPDEN_REG0_ARRAY + _port]);
         writeReg(PCAL6416A_PUPDSEL_REG0 + _port, regs[PCAL6416A_PUPDSEL_REG0_ARRAY + _port]);
-        break;
-    case INPUT_PULLDOWN:
+    }
+    else if (_mode == INPUT_PULLDOWN)
+    {
         regs[PCAL6416A_CFGPORT0_ARRAY + _port] |= (1 << _pin);
         regs[PCAL6416A_PUPDEN_REG0_ARRAY + _port] |= (1 << _pin);
         regs[PCAL6416A_PUPDSEL_REG0_ARRAY + _port] &= ~(1 << _pin);
         writeReg(PCAL6416A_CFGPORT0 + _port, regs[PCAL6416A_CFGPORT0_ARRAY + _port]);
         writeReg(PCAL6416A_PUPDEN_REG0 + _port, regs[PCAL6416A_PUPDEN_REG0_ARRAY + _port]);
         writeReg(PCAL6416A_PUPDSEL_REG0 + _port, regs[PCAL6416A_PUPDSEL_REG0_ARRAY + _port]);
-        break;
     }
 }
 
