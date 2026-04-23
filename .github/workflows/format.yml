@@ -15,7 +15,7 @@ jobs:
           extensions: "h,cpp,c,ino"
           clangFormatVersion: 20
           inplace: True
-      - uses: EndBug/add-and-commit@v9
+      - uses: EndBug/add-and-commit@v7
         with:
           author_name: Clang Robot
           author_email: robot@example.com
